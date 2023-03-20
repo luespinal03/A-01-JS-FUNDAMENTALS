@@ -64,7 +64,7 @@ const couldThrowError = () => {
   return '5) success'
 }
 
-const interiorFunc = (callBackFunc) => {
+const exteriorFunc = (callBackFunc) => {
   try {
     const result = callBackFunc();
     console.log(result);
@@ -73,7 +73,7 @@ const interiorFunc = (callBackFunc) => {
   }
 }
 
-interiorFunc(couldThrowError)
+exteriorFunc(couldThrowError)
 
 ////////////////////////////////////////////////////////////
 //// Handling data:
